@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch",
+            "program": "${workspaceRoot}/launch.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Build & Launch",
+            "program": "${workspaceRoot}/launch.js",
+            "preLaunchTask": "build"
+        },
+        {
+            "name": "Attach",
+            "type": "mono",
+            "request": "attach",
+            "address": "localhost",
+            "port": 55555,
+            "preLaunchTask": "shortDelay"
+        },
+        {
+            "name": "Delayed Attach",
+            "type": "mono",
+            "request": "attach",
+            "address": "localhost",
+            "port": 55555,
+            "preLaunchTask": "longDelay"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Start Debugging",
+            "configurations": ["Launch", "Attach"]
+        },
+        {
+            "name": "Build & Start Debugging",
+            "configurations": ["Build & Launch", "Delayed Attach"]
+        }
+    ]
+}
