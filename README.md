@@ -21,7 +21,7 @@ Use to execute `startServer.sh`
 ### startServer.sh
 1. Stops any XSP server running on port 5001 (the port I happened to choose for this project)
 2. Starts XSP server
-3. Sleeps for 2 seconds (I've found that this is needed for the debugger to attach reliably, but don't know why)
+3. Sleeps for 2 seconds to wait for server to start
 4. Launches http://127.0.0.1:5001
 
 ### launch.json and tasks.json
