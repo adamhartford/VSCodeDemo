@@ -19,7 +19,7 @@
             "type": "mono",
             "request": "attach",
             "address": "localhost",
-            "port": 55555,
+            "port": 55551,
             "preLaunchTask": "shortDelay"
         },
         {
@@ -27,7 +27,7 @@
             "type": "mono",
             "request": "attach",
             "address": "localhost",
-            "port": 55555,
+            "port": 55551,
             "preLaunchTask": "longDelay"
         }
     ],
