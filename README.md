@@ -28,6 +28,6 @@ Use to execute `startServer.sh`
 I'll assume you know a bit about configuring VS Code. I mostly use the `Start Debugging` launch configuration, which requires me to build the project first. There is a `Build & Start Debugging` configuration that will do both with a 10 second delay to wait for the build to finish. Currently, VS Code runs all compound configurations at once. It would be great if there was a way to have `Attach` wait for `Build & Launch` to complete. But, AFAIK the only way to accomplish this now is with a delay.
 
 ### Attaching
-The vscode-mono-debug attach is finicky. I've generally found that you need to attach right away after starting XSP, and before you make any requests to the server. I've tried to time the tasks so that the attach is reliable, but if I notice the debugger failed to attach, I'll just stop and start again.
+The vscode-mono-debug attach is finicky. I've generally found that you need to attach right away after starting XSP, and before you make any requests to the server (or maybe right after the first one?). I've tried to time the tasks so that the attach is reliable, but if I notice the debugger failed to attach, I'll just stop and start again.
 
 Hope this helps. Good luck!
